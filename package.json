@@ -1,0 +1,31 @@
+{
+  "name": "cartzero",
+  "version": "0.0.1",
+  "description": "Ecommerce admin platform and pages without real finance transactions",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "check-types": "turbo run check-types",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.16.1",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.2",
+    "turbo": "^2.7.3",
+    "typescript": "5.9.2",
+    "ultracite": "5.1.2"
+  },
+  "packageManager": "pnpm@12.16.1",
+  "type": "module"
+}
