@@ -12,6 +12,7 @@
       ],
       "env": [
         "BLOG_URL",
+        "CARTZERO_ADMIN_URL",
         "INTERNAL_CONFIG"
       ],
       "outputs": [
