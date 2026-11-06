@@ -1,3 +1,5 @@
+import type * as React from "react";
+
 export default function LogoConstruction(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
