@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: '/admin',
-  assetPrefix: '/admin-static',
+  basePath: "/admin",
+  assetPrefix: "/admin-static",
   experimental: {
     agentFeedback: true,
   },

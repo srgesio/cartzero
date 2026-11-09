@@ -10,9 +10,8 @@ const tourney = Tourney({
 const titilliumWeb = Titillium_Web({
   variable: "--font-titillium-web",
   weight: ["200", "300", "400", "600", "700", "900"],
-  subsets: ["latin"]
+  subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Cartzero ECOM",

@@ -1,20 +1,20 @@
 import type { NextConfig } from "next";
 
-const adminUrl = process.env.CARTZERO_ADMIN_URL || 'http://localhost:3001';
+const adminUrl = process.env.CARTZERO_ADMIN_URL || "http://localhost:3001";
 
 const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: '/admin',
+        source: "/admin",
         destination: `${adminUrl}/admin`,
       },
       {
-        source: '/admin/:path*',
+        source: "/admin/:path*",
         destination: `${adminUrl}/admin/:path*`,
       },
       {
-        source: '/admin-static/:path+',
+        source: "/admin-static/:path+",
         destination: `${adminUrl}/admin-static/:path+`,
       },
     ];

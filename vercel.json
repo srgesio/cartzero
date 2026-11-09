@@ -1,13 +1,13 @@
 {
-    "$schema": "https://openapi.vercel.sh/vercel.json",
-    "services": {
-        "cartzero-admin": {
-            "root": "apps/cartzero-admin",
-            "framework": "nextjs"
-        },
-        "cartzero-web": {
-            "root": "apps/cartzero-web",
-            "framework": "nextjs"
-        }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "cartzero-admin": {
+      "root": "apps/cartzero-admin",
+      "framework": "nextjs"
+    },
+    "cartzero-web": {
+      "root": "apps/cartzero-web",
+      "framework": "nextjs"
     }
+  }
 }

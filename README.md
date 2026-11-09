@@ -9,6 +9,7 @@ O checkout é simulado: não há transações financeiras reais.
 ## Produtos
 
 ### Cartzero Admin
+
 Painel do lojista.
 
 - **Catálogo:** produtos, SKUs, preços, estoque e imagens
@@ -18,6 +19,7 @@ Painel do lojista.
 - **Dados:** informações de clientes
 
 ### Cartzero Ecom
+
 Loja pública para o cliente final.
 
 - **Home**
