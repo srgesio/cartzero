@@ -7,11 +7,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/admin",
-        destination: `${adminUrl}/admin`,
+        destination: `${adminUrl}/`,
       },
       {
         source: "/admin/:path*",
-        destination: `${adminUrl}/admin/:path*`,
+        destination: `${adminUrl}/:path*`,
       },
       {
         source: "/admin-static/:path+",
