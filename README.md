@@ -38,6 +38,22 @@ Loja pública para o cliente final.
 - **Pedidos como máquina de estados:** `criado → pagamento aprovado → em separação → enviado → entregue` (ou `cancelado`)
 - **Design tokens:** cores, tipografia e espaçamentos centralizados, permitindo tema por loja
 
+## Pacotes compartilhados
+
+Localizados em `packages/`:
+
+- **`@cartzero/ui`** — componentes de interface (React + shadcn/ui) e estilos globais.
+- **`@cartzero/lib`** — utilitários compartilhados, como o helper `cn`.
+- **`@cartzero/server`** — regras de negócio compartilhadas, como as funções de status da API.
+
+## API
+
+Rotas versionadas em `apps/cartzero-admin/app/api`:
+
+| Método | Rota             | Descrição                                              |
+| ------ | ---------------- | ------------------------------------------------------ |
+| `GET`  | `/api/v1/status` | Verifica a disponibilidade da API. Retorna `200` e `{ "message": "ok" }`. |
+
 ## Stack
 
 _A definir._

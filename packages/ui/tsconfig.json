@@ -20,7 +20,7 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "@repo/ui/*": ["./src/*"]
+      "@cartzero/ui/*": ["./src/*"]
     }
   },
   "include": ["src"],

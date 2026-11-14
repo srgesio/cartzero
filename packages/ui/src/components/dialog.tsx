@@ -13,7 +13,7 @@ import {
 import { X } from "lucide-react";
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
-import { cn } from "@repo/ui/lib/utils";
+import { cn } from "@cartzero/lib/utils";
 
 const DialogRoot = Root;
 const DialogTrigger = Trigger;

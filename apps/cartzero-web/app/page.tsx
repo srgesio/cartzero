@@ -1,4 +1,4 @@
-import LogoConstruction from "@repo/ui/components/logo-construction";
+import LogoConstruction from "@cartzero/ui/components/logo-construction";
 
 export default function Home() {
   return (

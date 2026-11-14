@@ -1,0 +1,15 @@
+{
+  "name": "@cartzero/server",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./index.ts",
+    "./api/*": "./api/*/index.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  }
+}

@@ -1,3 +1,5 @@
+import { getApiStatus } from "@cartzero/server";
+
 export async function GET() {
-  return Response.json({ message: "ok" }, { status: 200 });
+  return await getApiStatus();
 }
