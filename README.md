@@ -45,6 +45,7 @@ Localizados em `packages/`:
 - **`@cartzero/ui`** — componentes de interface (React + shadcn/ui) e estilos globais.
 - **`@cartzero/lib`** — utilitários compartilhados, como o helper `cn`.
 - **`@cartzero/server`** — regras de negócio compartilhadas, como as funções de status da API.
+- **`@cartzero/database`** — configuração local do Postgres, exposta via `compose.yaml`.
 
 ## API
 
