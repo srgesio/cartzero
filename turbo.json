@@ -5,7 +5,16 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "env": ["BLOG_URL", "CARTZERO_ADMIN_URL", "INTERNAL_CONFIG"],
+      "env": [
+        "BLOG_URL",
+        "CARTZERO_ADMIN_URL",
+        "INTERNAL_CONFIG",
+        "DATABASE_URL",
+        "POSTGRES_HOST",
+        "POSTGRES_USER",
+        "POSTGRES_PASSWORD",
+        "POSTGRES_DB"
+      ],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "check-types": {
