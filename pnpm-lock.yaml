@@ -413,6 +413,15 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
 
+  tests:
+    devDependencies:
+      '@cartzero/database':
+        specifier: workspace:*
+        version: link:../packages/database
+      vitest:
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@22.20.5)(vite@7.3.7(@types/node@22.20.5)(jiti@2.7.0)(lightningcss@1.33.0)(tsx@4.23.15))
+
 packages:
 
   '@alloc/quick-lru@5.3.0':

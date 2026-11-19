@@ -1,0 +1,10 @@
+{
+  "name": "@cartzero/tests",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@cartzero/database": "workspace:*",
+    "vitest": "^5.1.0"
+  }
+}
