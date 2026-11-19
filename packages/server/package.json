@@ -10,6 +10,7 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
+    "@cartzero/database": "workspace:*",
     "typescript": "5.9.2"
   }
 }
