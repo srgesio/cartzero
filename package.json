@@ -4,7 +4,10 @@
   "description": "Ecommerce admin platform and pages without real finance transactions",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "pnpm services:up && turbo run dev",
+    "services:up": "docker compose -f ./packages/database/compose.yaml up -d",
+    "services:down": "docker compose -f ./packages/database/compose.yaml down",
+    "services:stop": "docker compose -f ./packages/database/compose.yaml stop",
     "check-types": "turbo run check-types",
     "lint": "biome lint .",
     "lint:check": "prettier --check .",
