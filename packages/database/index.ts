@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { pgView, text } from "drizzle-orm/pg-core";
 import { drizzle } from "drizzle-orm/node-postgres";
 
 const {
@@ -9,12 +10,17 @@ const {
   POSTGRES_DB,
 } = process.env;
 
-export const db = drizzle({
-  connection: {
-    host: POSTGRES_HOST,
-    port: Number(POSTGRES_PORT),
-    user: POSTGRES_USER,
-    password: POSTGRES_PASSWORD,
-    database: POSTGRES_DB,
-  },
-});
+export const connection = {
+  dbActivity: pgView("pg_stat_activity", {
+    datname: text("datname"),
+  }).existing(),
+  db: drizzle({
+    connection: {
+      host: POSTGRES_HOST,
+      port: Number(POSTGRES_PORT),
+      user: POSTGRES_USER,
+      password: POSTGRES_PASSWORD,
+      database: POSTGRES_DB,
+    },
+  }),
+};

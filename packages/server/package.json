@@ -11,6 +11,13 @@
   },
   "devDependencies": {
     "@cartzero/database": "workspace:*",
+    "@types/pg": "^8.23.1",
     "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "add": "^2.0.9",
+    "drizzle-orm": "1.0.0-rc.5",
+    "pg": "^8.23.1",
+    "pnpm": "^12.21.0"
   }
 }

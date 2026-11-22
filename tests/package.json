@@ -5,6 +5,7 @@
   "type": "module",
   "devDependencies": {
     "@cartzero/database": "workspace:*",
+    "@cartzero/server": "workspace:*",
     "vitest": "^5.1.0"
   }
 }
