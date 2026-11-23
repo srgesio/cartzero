@@ -22,7 +22,7 @@ export const connection = {
       user: POSTGRES_USER,
       password: POSTGRES_PASSWORD,
       database: POSTGRES_DB,
-      ssl: NODE_ENV === "development" ? false : true,
+      ssl: NODE_ENV === "development" || NODE_ENV === "test" ? false : true,
     },
   }),
 };
