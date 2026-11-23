@@ -12,8 +12,10 @@
         "DATABASE_URL",
         "POSTGRES_HOST",
         "POSTGRES_USER",
+        "POSTGRES_PORT",
         "POSTGRES_PASSWORD",
-        "POSTGRES_DB"
+        "POSTGRES_DB",
+        "NODE_ENV"
       ],
       "outputs": [".next/**", "!.next/cache/**"]
     },

@@ -8,6 +8,7 @@ const {
   POSTGRES_USER,
   POSTGRES_PASSWORD,
   POSTGRES_DB,
+  NODE_ENV,
 } = process.env;
 
 export const connection = {
@@ -21,6 +22,7 @@ export const connection = {
       user: POSTGRES_USER,
       password: POSTGRES_PASSWORD,
       database: POSTGRES_DB,
+      ssl: NODE_ENV === "development" ? false : true,
     },
   }),
 };
