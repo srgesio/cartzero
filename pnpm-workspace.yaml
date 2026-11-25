@@ -8,3 +8,7 @@ allowBuilds:
 overrides:
   "@types/react": 19.3.0
   "@types/react-dom": 19.3.0
+  drizzle-orm: 1.0.0-rc.6
+permissions:
+  drizzle-kit:
+    skills: false

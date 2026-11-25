@@ -12,10 +12,10 @@
   },
   "devDependencies": {
     "@types/pg": "^8.23.1",
-    "drizzle-kit": "1.0.0-rc.5",
+    "drizzle-kit": "1.0.0-rc.6",
     "tsx": "^4.23.15"
   },
   "peerDependencies": {
-    "drizzle-orm": "1.0.0-rc.5"
+    "drizzle-orm": "1.0.0-rc.6"
   }
 }

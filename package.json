@@ -15,7 +15,9 @@
     "test": "vitest",
     "test:watch": "vitest watch",
     "format": "biome format --write .",
-    "check": "biome check ."
+    "check": "biome check .",
+    "migration:create": "pnpm --filter @cartzero/database exec drizzle-kit generate",
+    "migration:up": "pnpm --filter @cartzero/database exec drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
@@ -29,12 +31,19 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
+    "@types/pg": "^8.23.1",
     "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
     "turbo": "^2.7.3",
     "typescript": "5.9.2",
     "ultracite": "5.1.2",
     "vitest": "^5.1.0"
   },
   "packageManager": "pnpm@12.16.1",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "drizzle-orm": "1.0.0-rc.6",
+    "pg": "^8.23.1"
+  }
 }

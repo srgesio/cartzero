@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "add": "^2.0.9",
-    "drizzle-orm": "1.0.0-rc.5",
+    "drizzle-orm": "1.0.0-rc.6",
     "pg": "^8.23.1",
     "pnpm": "^12.21.0"
   }
