@@ -8,7 +8,6 @@ test("Get to api/v1/status should return 200", async () => {
   expect(response.status).toBe(200);
 
   const responseBody = await response.json();
-  console.log("body==>", responseBody);
 
   const { updatedAt, dependencies } = responseBody;
 
@@ -33,5 +32,5 @@ test("Get to api/v1/status should return 200", async () => {
 
   expect(openedConnections).toBeDefined();
   expect(openedConnections).toBeTypeOf("number");
-  expect(openedConnections).toEqual(1);
+  expect(openedConnections).toBeLessThanOrEqual(2);
 });

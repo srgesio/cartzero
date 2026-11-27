@@ -17,7 +17,7 @@
     "format": "biome format --write .",
     "check": "biome check .",
     "migration:create": "pnpm --filter @cartzero/database exec drizzle-kit generate",
-    "migration:up": "pnpm --filter @cartzero/database exec drizzle-kit migrate"
+    "migration:up": "pnpm --filter @cartzero/database exec drizzle-kit up"
   },
   "keywords": [],
   "author": "",

@@ -4,7 +4,8 @@
   "private": true,
   "exports": {
     "./compose.yaml": "./compose.yaml",
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./migrationRunner": "./migrationRunner/index.ts"
   },
   "dependencies": {
     "dotenv": "^18.0.10",
